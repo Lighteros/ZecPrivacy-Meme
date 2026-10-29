@@ -1,0 +1,178 @@
+.pumpswap-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 49px;
+  padding: 12px 22px;
+  border: 1px solid #86ef14;
+  background: #86ef14;
+  color: #081208;
+  font-family: Unbounded, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  border-radius: 2px;
+  text-decoration: none;
+}
+.pumpswap-btn:hover {
+  background: #a3f73a;
+  border-color: #a3f73a;
+  transform: translateY(-2px);
+  color: #081208;
+}
+.pumpswap-btn img,
+.pumpswap-btn svg {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+.pumpswap-btn.wide {
+  width: 100%;
+  min-height: 52px;
+  font-size: 12px;
+}
+.pumpswap-btn.nav-buy {
+  min-height: 37px;
+  padding: 8px 14px;
+  font-size: 10px;
+  gap: 8px;
+}
+.pumpswap-btn.nav-buy img,
+.pumpswap-btn.nav-buy svg {
+  width: 16px;
+  height: 16px;
+}
+.nav-x {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 37px;
+  height: 37px;
+  border: 1px solid var(--line);
+  color: var(--bone);
+}
+.nav-x:hover {
+  color: var(--gold);
+  border-color: var(--gold);
+}
+body {
+  padding-bottom: 0;
+}
+
+.live-pulse > span {
+  animation: live-pulse 1.6s ease-in-out infinite;
+}
+@keyframes live-pulse {
+  0%, 100% { box-shadow: 0 0 8px #c9a06355; opacity: 1; }
+  50% { box-shadow: 0 0 16px #c9a063aa; opacity: 0.65; }
+}
+
+.live-status {
+  margin-top: 18px;
+}
+.live-status strong {
+  display: block;
+  font-family: Unbounded, sans-serif;
+  font-size: 42px;
+  font-weight: 500;
+  color: var(--gold);
+  letter-spacing: -1px;
+  line-height: 1;
+}
+.live-status small {
+  display: block;
+  font-size: 8px;
+  letter-spacing: 1.3px;
+  color: var(--muted);
+  margin-top: 12px;
+}
+.supply-bar {
+  display: block;
+  height: 5px;
+  width: 100%;
+  background: #302317;
+  margin-top: 18px;
+}
+.supply-bar span {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, #846336, #dfbc7e);
+}
+.donut.live {
+  background: conic-gradient(from -90deg, #ba8f50, #e2bf82 100%);
+}
+
+.buy-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: auto;
+}
+.howto {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.howto-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.howto-num {
+  font-family: Unbounded, sans-serif;
+  font-size: 18px;
+  color: var(--bronze);
+  min-width: 28px;
+}
+.howto-item h3 {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+.howto-item p {
+  font-size: 10px;
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+.ca-short {
+  font-family: JetBrains Mono, monospace;
+  font-size: 10px;
+  color: var(--gold);
+  letter-spacing: 0.3px;
+}
+
+.swap-note {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 9px;
+  line-height: 1.6;
+}
+.swap-note svg {
+  color: var(--bronze);
+  flex-shrink: 0;
+}
+
+@media (max-width: 800px) {
+  .pumpswap-btn.nav-buy span.full {
+    display: none;
+  }
+  .nav-x {
+    margin-left: auto;
+  }
+  .pumpswap-btn.nav-buy {
+    margin-left: 8px;
+  }
+}
+@media (max-width: 580px) {
+  body {
+    padding-bottom: 0;
+  }
+}
